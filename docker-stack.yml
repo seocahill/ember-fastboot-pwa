@@ -1,0 +1,33 @@
+version: "3.3"
+services:
+
+  nginx: 
+    image: nginx:alpine
+    volumes:
+      - letsencrypt_certs:/etc/letsencrypt
+    ports: 
+      - "80:80"
+      - "443:443"
+    configs:
+      - source: site.conf
+        target: /etc/nginx/nginx.conf
+
+  fastboot:
+    image: registry.gitlab.com/seocahill/pwa-portfolio-site/image:latest
+    env_file: .env
+
+  ghost:
+    image: ghost:1.8.0-alpine
+    environment: 
+      - url=https://blog.seocahill.com
+    volumes: 
+      - blog_data:/var/lib/ghost/content
+
+volumes:
+  blog_data:
+  letsencrypt_certs:
+    external: true
+
+configs:
+  site.conf:
+    file: ./config/nginx.conf

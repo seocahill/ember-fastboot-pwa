@@ -1,0 +1,9 @@
+{
+  "name": "seocahill",
+  "dependencies": {
+    "materialize": "0.97.7"
+  },
+  "devDependencies": {
+    "jquery.terminal": "^1.2.0"
+  }
+}

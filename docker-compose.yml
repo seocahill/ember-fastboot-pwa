@@ -1,0 +1,27 @@
+version: "3.1"
+services:
+
+  nginx: 
+    image: nginx:alpine
+    volumes:
+      - ./config/nginx.conf.dev:/etc/nginx/nginx.conf
+      - ./certs:/tmp/certs
+    ports: 
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - fastboot
+      - ghost
+
+  fastboot:
+    build: .
+    image: registry.gitlab.com/seocahill/pwa-portfolio-site/image:latest
+    env_file: .env
+
+  ghost:
+    image: ghost:alpine
+    volumes: 
+      - data:/var/lib/ghost/content
+
+volumes:
+  data:

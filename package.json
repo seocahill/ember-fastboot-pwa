@@ -1,0 +1,67 @@
+{
+  "name": "seocahill",
+  "version": "0.0.0",
+  "description": "Small description for seocahill goes here",
+  "license": "MIT",
+  "author": "",
+  "directories": {
+    "doc": "doc",
+    "test": "tests"
+  },
+  "repository": "",
+  "scripts": {
+    "build": "ember build",
+    "start": "ember server",
+    "test": "ember test"
+  },
+  "devDependencies": {
+    "broccoli-asset-rev": "^2.4.5",
+    "ember-ajax": "^2.4.1",
+    "ember-cli": "2.12.1",
+    "ember-cli-app-version": "^2.0.0",
+    "ember-cli-babel": "^5.1.7",
+    "ember-cli-code-coverage": "^0.3.12",
+    "ember-cli-dependency-checker": "^1.3.0",
+    "ember-cli-deploy": "^1.0.0",
+    "ember-cli-deploy-build": "^1.1.0",
+    "ember-cli-deploy-fastboot-s3": "^0.3.1",
+    "ember-cli-deploy-manifest": "^1.1.0",
+    "ember-cli-deploy-revision-data": "^1.0.0",
+    "ember-cli-eslint": "^3.0.0",
+    "ember-cli-fastboot": "1.0.0-beta.16",
+    "ember-cli-favicon": "^1.0.0-beta.4",
+    "ember-cli-htmlbars": "^1.1.1",
+    "ember-cli-htmlbars-inline-precompile": "^0.3.6",
+    "ember-cli-inject-live-reload": "^1.4.1",
+    "ember-cli-qunit": "^3.1.0",
+    "ember-cli-sass": "^6.1.3",
+    "ember-cli-shims": "^1.0.2",
+    "ember-cli-sri": "^2.1.0",
+    "ember-cli-uglify": "^1.2.0",
+    "ember-export-application-global": "^1.0.5",
+    "ember-load-initializers": "^0.6.0",
+    "ember-material-design-icons-shim": "^0.1.10",
+    "ember-materialize-shim": "^0.4.1",
+    "ember-noscript": "^2.2.0",
+    "ember-resolver": "^2.0.3",
+    "ember-responsive": "^2.0.2",
+    "ember-service-worker": "^0.6.4",
+    "ember-service-worker-asset-cache": "^0.6.0",
+    "ember-service-worker-cache-fallback": "^0.6.0",
+    "ember-service-worker-index": "^0.6.1",
+    "ember-service-worker-update-notify": "^1.0.1",
+    "ember-source": "~2.12.0",
+    "ember-web-app": "^1.2.0",
+    "ember-web-app-rename": "^1.0.0",
+    "loader.js": "^4.2.3"
+  },
+  "engines": {
+    "node": ">= 4"
+  },
+  "private": true,
+  "dependencies": {
+    "fastboot-app-server": "^1.0.0-rc.5",
+    "fastboot-s3-downloader": "^0.2.1",
+    "fastboot-s3-notifier": "^0.1.2"
+  }
+}

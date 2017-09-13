@@ -1,0 +1,27 @@
+{{#if media.isDesktop}}
+  <section class="container computer-container">
+    <div class="macbook">
+      <div class="macbook-lid">
+        <div class="macbook-screen">
+          <div class="macbook-content">
+            {{x-terminal navigateTo=(action "navigateTo")}}
+          </div>
+        </div>
+      </div>
+      <div class="macbook-base"></div>
+    </div>
+  </section>
+{{else}}
+  <div class="website-author center-align">
+    <code>\{{Seosamh Cahill}}</code><br>
+  </div>
+  <div class="mac">
+    <i class="mac_sreen"></i>
+    <i class="mac_tower"></i>
+    <i class="mac_keyboard"></i>
+    <i class="mac_shadow"></i>
+  </div>
+  <div class="website-information center-align ">
+    <code>>_ Ruby + JS webdev</code>
+  </div>
+{{/if}}

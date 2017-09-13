@@ -1,0 +1,64 @@
+/***************
+  HTML Styles
+***************/
+
+body {
+  background-color: #fcfcfc;
+}
+
+.main-container {
+  @media (min-width: 600px) {
+    padding: 0 1.5rem;
+     margin: 0 auto;
+  }
+}
+
+.computer-container {
+  padding-top: 20vh;
+}
+
+.mob-container {
+  max-width: 710px;
+  @media (max-width: 600px) {
+     margin: 0 auto;
+     max-width: 1280px;
+     width: 90%;
+     margin-bottom: 20px;
+  }
+}
+
+p {
+  color: rgba(0, 0, 0, 0.71);
+  padding: 0;
+  -webkit-font-smoothing: antialiased; 
+}
+
+.header {
+  color: #ee6e73;
+  font-weight: 300; 
+}
+
+.caption {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 30px; 
+}
+
+.contact-button {
+  margin-bottom: 20px;
+} 
+
+nav {
+  color: #fff;
+  background-color: #de333e;
+  ul {
+    max-width: 710px;
+  }
+}
+
+.btn-block {
+  width: 100%;
+}
+
+
+
