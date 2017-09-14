@@ -1,14 +1,24 @@
 # Ember fastboot PWA demo
 
-This is the code for my portfolio site www.seocahill.com
+This is the code and image for my portfolio site www.seocahill.com
+
+### Progressive web app
 
 You can read more about progressive web apps [here](https://developers.google.com/web/progressive-web-apps/)
 
+Don't forget assets are cached indefinitely even offline (until version is updated in ```ember-cli-build.js```) so you will need to enable service worker update on reload in dev-tools for code reloading to work.
+
+### Server rendering
+
 Ember fastboot is ember's server side rendering solution, read more [here](https://ember-fastboot.com/)
 
-The whole stack is setup to run in development at www.seocahill.dev and
-blog.seocahill.dev over ssl with self signed certs.
+The deployment strategy is to download the latest app from an s3 bucket. The user should then be prompted to update to the latest version (dont' forget to bump the version before deploying!).
 
+### Docker stack
+
+The stack is setup to run in development at www.seocahill.dev and blog.seocahill.dev over ssl with self signed certs.
+
+There is a script included for generating ssl certs you'll need to update your hosts file also to get the stack up and running.
 
 ## Prerequisites
 
@@ -48,7 +58,13 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+```
+docker stack deploy my-site-and-blog
+
+ember deploy staging --activate
+```
+
+Also need s3 credentials set (see ```deploy.js```)
 
 ## Further Reading / Useful Links
 
