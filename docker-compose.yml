@@ -15,7 +15,7 @@ services:
 
   fastboot:
     build: .
-    image: registry.gitlab.com/seocahill/pwa-portfolio-site/image:latest
+    image: seocahill/ember-fastboot-pwa:latest
     env_file: .env
 
   ghost:

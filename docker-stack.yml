@@ -13,7 +13,7 @@ services:
         target: /etc/nginx/nginx.conf
 
   fastboot:
-    image: registry.gitlab.com/seocahill/pwa-portfolio-site/image:latest
+    image: rseocahill/ember-fastboot-pwa
     env_file: .env
 
   ghost:
