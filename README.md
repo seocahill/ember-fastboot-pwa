@@ -1,6 +1,10 @@
+[![Build Status](https://travis-ci.org/seocahill/ember-fastboot-pwa.svg?branch=master)](https://travis-ci.org/seocahill/ember-fastboot-pwa)
+[![Maintainability](https://api.codeclimate.com/v1/badges/573aafedbfda09f04720/maintainability)](https://codeclimate.com/github/seocahill/ember-fastboot-pwa/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/573aafedbfda09f04720/test_coverage)](https://codeclimate.com/github/seocahill/ember-fastboot-pwa/test_coverage)
+
 # Ember fastboot PWA demo
 
-This is the code and image for my portfolio site www.seocahill.com.
+This is based on the code for my portfolio site www.seocahill.com
 
 ### Progressive web app
 
