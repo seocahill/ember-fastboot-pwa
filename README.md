@@ -1,10 +1,12 @@
 # Ember fastboot PWA demo
 
-This is the code and image for my portfolio site www.seocahill.com
+This is the code and image for my portfolio site www.seocahill.com.
 
 ### Progressive web app
 
-You can read more about progressive web apps [here](https://developers.google.com/web/progressive-web-apps/)
+My site scores 100 on the lighthouse PWA test.
+
+You can read more about progressive web apps [here](https://developers.google.com/web/progressive-web-apps/).
 
 Don't forget assets are cached indefinitely even offline (until version is updated in ```ember-cli-build.js```) so you will need to enable service worker update on reload in dev-tools for code reloading to work.
 
