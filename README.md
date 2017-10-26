@@ -8,7 +8,7 @@ This is based on the code for my portfolio site www.seocahill.com
 
 ### Progressive web app
 
-My site scores 100 on the lighthouse PWA test.
+![lighthouse-report](audit.png)
 
 You can read more about progressive web apps [here](https://developers.google.com/web/progressive-web-apps/).
 
